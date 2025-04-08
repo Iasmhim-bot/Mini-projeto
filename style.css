@@ -28,7 +28,11 @@ overflow: hidden;
     background: linear-gradient(120deg, #3acbf0 0%, #8bb0ff 100%);
     padding: 24px;
     text-align: center;
-    background-color: #fff;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: bold;
+    border-top-left-radius: 14px;
+    border-top-right-radius: 14px;
 }
 
 .form{
@@ -51,18 +55,20 @@ overflow: hidden;
     width: 100%;
     border-radius: 8px;
     padding: 9px;
-    border: 0.5px solid;
+    border: 0.5px solid #ccc;
     background-color: #dfdfdf;
 }
 
-.form-content a{
+.form-content span{
     position: absolute;
-    bottom: -8px;
+    bottom: -7px;
     left: 0;
+    font-size: 13px;
     visibility: hidden;
 }
 
-.form-content button{
+/* |Estilo do botão (fora do .form-content)*/
+button[type="submit"] {
     background-color: #00c3ff;
     color: #fff;
     width: 100%;
@@ -75,10 +81,10 @@ overflow: hidden;
 }
 
 .form-content.error input {
-border-color: #ff3b25;
+    border-color: #ff3b25;
 }
 
-.form-content.error a{
+.form-content.error span{
     color: #ff3b25;
     visibility: visible;
 }
